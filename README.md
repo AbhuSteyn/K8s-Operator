@@ -1,8 +1,4 @@
-Below is the complete consolidated file content that you can copy into one file (for example, `README.md`). This version is provided as a single code block so you can download or copy the entire content at once.
 
----
-
-```markdown
 # Business Scaling Operator
 
 This project demonstrates a custom Kubernetes operator that uses business metrics to dynamically scale a target deployment. Unlike the standard HPA that relies solely on CPU and memory, this operator queries an external API (or any metric source) to adjust the replica count of a given deployment based on real-world business metrics (for example, the number of active users). The operator is implemented using [Kopf](https://kopf.readthedocs.io/en/stable/), the Kubernetes Operator Pythonic Framework, and is designed to run continuously inside a Kubernetes cluster.
